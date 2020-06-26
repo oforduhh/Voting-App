@@ -5,6 +5,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+  isVoted: false,
   email: {
     type: String,
     required: true,
@@ -13,6 +14,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+  
   date: {
     type: Date,
     default: Date.now,
