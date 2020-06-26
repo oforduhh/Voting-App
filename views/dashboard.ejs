@@ -1,0 +1,31 @@
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome <%= user.name %></p>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
+<div class="container">
+    <h1>Voting Poll</h1>
+    <p>Vote for your President</p>
+    <form method="POST" action="/" id="vote-form">
+        <p>
+            <label>
+                <input id="windows" value="Windows" name="os" type="radio" />
+                <span for="windows">Windows</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input id="other" value="Other" name="os" type="radio" />
+                <span for="other">Something Else</span>
+            </label>
+        </p>
+        <p><label>
+                <input id="linux" value="Linux" name="os" type="radio" />
+                <span for="linux">Linux</span>
+            </label></p>
+        <input type="submit" value="Vote" class="btn">
+    </form>
+    <br>
+    <br>
+    <p class="lead mt-4">
+        To see view poll <a href="/chart">Click Here</a>
+    </p>
+</div>
