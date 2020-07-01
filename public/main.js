@@ -13,12 +13,13 @@ if (form) {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
+        alert(data.message);
       })
       .catch((err) => {
         console.log(err);
       });
-    alert("Thanks for your vote");
+    
   });
 }
 // http://localhost:3000/
